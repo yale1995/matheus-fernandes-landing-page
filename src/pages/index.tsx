@@ -3,11 +3,13 @@ import { SectionTwo } from '@/components/SectionTwo'
 import { HeroSection } from '../components/HeroSection'
 import { MetodologySection } from '@/components/MethodologySection'
 import { MFConsultingSection } from '@/components/MFConsultingSection'
+import { AttentionSection } from '@/components/AttentionSection'
 
 import { useMobile} from '@/hooks/useMobile'
 import { useEffect, useState } from 'react'
 
 import Head from 'next/head'
+
 
 
 export default function Home() {
@@ -37,6 +39,7 @@ export default function Home() {
       <MetodologySection />
       <SensesSection />
       {!isMobile && <MFConsultingSection />}
+      <AttentionSection/>
     </>
   )
 }
