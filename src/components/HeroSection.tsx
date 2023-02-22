@@ -1,7 +1,9 @@
-import Image from 'next/image'
+import { CallToAction } from './CallToAction'
 
+import Image from 'next/image'
 import HeroImage from '../../public/hero-matheus-fernandes.png'
 import Logo from '../../public/mf-logo.png'
+
 
 export function HeroSection() {
     return (
@@ -27,11 +29,7 @@ export function HeroSection() {
                         className='text-white text-xl mt-4 mobile:text-sm mobile:text-center mobile:mt-4'>
                         Se você deseja alcançar resultados de verdade, aplique para uma vaga.
                     </p>
-                    <button
-                        className='bg-highlight text-md font-bold text-black w-full mt-8 p-4 rounded-md
-                         mobile:text-sm mobile:p-2 mobile:mt-6 animate-bounce hover:bg-gradient-to-r from-cyan-500 to-blue-500'>
-                        Quero ser selecionado para a Sessão Estratégica
-                    </button>
+                    <CallToAction />
                 </div>
             </div>
         </main>

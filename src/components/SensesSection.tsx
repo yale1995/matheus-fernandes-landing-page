@@ -1,3 +1,4 @@
+import { CallToAction } from "./CallToAction";
 import { CardContainer } from "./SenseCardContainer";
 
 export function SensesSection() {
@@ -13,11 +14,7 @@ export function SensesSection() {
                 </p>
                 <CardContainer />
                 <span className="text-highlight block text-center mt-8">Se você está sentindo isso também, a CMF é feita para você!</span>
-                <button
-                    className='bg-highlight text-md font-bold text-black w-[750px] block mx-auto mt-8 p-4 rounded-md
-                         mobile:text-sm mobile:p-2 mobile:mt-6 animate-bounce hover:bg-gradient-to-r from-cyan-500 to-blue-500 mobile:w-full'>
-                    Quero ser selecionado para a Sessão Estratégica
-                </button>
+                <CallToAction isCenter />
             </div>
         </section>
     )

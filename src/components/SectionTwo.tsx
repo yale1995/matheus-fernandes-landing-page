@@ -1,6 +1,8 @@
-import Image from 'next/image'
+import { CallToAction } from './CallToAction'
 
+import Image from 'next/image'
 import WomanImage from '../../public/starting-diet-image.png'
+
 
 export function SectionTwo() {
     return (
@@ -21,10 +23,7 @@ export function SectionTwo() {
                     <p className='text-white text-md mt-4 mobile:text-xs'>
                         Para que você alcance um resultado de verdade, é preciso que tenha um <span className='text-primary'>DIRECIONAMENTO</span> e <span className='text-primary'>ACOMPANHAMENTO</span> adequado, aliado ao suporte que você precisa.
                     </p>
-                    <button
-                        className='bg-highlight text-md font-bold text-black w-full mt-8 p-4 rounded-md mobile:text-sm mobile:p-2 mobile:mt-6 animate-bounce'>
-                        Quero ser selecionado para a Sessão Estratégica
-                    </button>
+                    <CallToAction />
                 </div>
                 <div className='w-[500px] mobile:w-[250px] mobile:mt-4'>
                     <Image src={WomanImage} alt='Mulher insatisfeita com seu corpo' />
