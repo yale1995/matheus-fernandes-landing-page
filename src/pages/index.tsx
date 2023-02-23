@@ -4,12 +4,15 @@ import { HeroSection } from '../components/HeroSection'
 import { MetodologySection } from '@/components/MethodologySection'
 import { MFConsultingSection } from '@/components/MFConsultingSection'
 import { AttentionSection } from '@/components/AttentionSection'
+import { PatientReviewsSection } from '@/components/PatientReviewsSection'
+import { AboutMe } from '@/components/AboutMe'
+import { Footer } from '@/components/Footer'
 
 import { useMobile} from '@/hooks/useMobile'
 import { useEffect, useState } from 'react'
 
 import Head from 'next/head'
-import { PatientReviewsSection } from '@/components/PatientReviewsSection'
+
 
 
 
@@ -37,6 +40,8 @@ export default function Home() {
       {!isMobile && <MFConsultingSection />}
       <AttentionSection/>
       <PatientReviewsSection/>
+      <AboutMe/>
+      <Footer isMobile={isMobile}/>
     </>
   )
 }

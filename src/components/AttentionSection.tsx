@@ -2,7 +2,7 @@ import { BenefitsCardContainer } from "./BenefitsContainer";
 
 export function AttentionSection() {
     return (
-        <section className="py-16 mobile:py-4 bg-gradient-to-b from-gray-100 to-gray-500">
+        <section className="py-16 mobile:py-4 bg-white to-gray-500">
             <h1 className="text-red-500 text-center text-heading-2 font-bold max-w-2xl mx-auto mobile:text-xl mobile:max-w-xs">
                 Atenção
             </h1>
