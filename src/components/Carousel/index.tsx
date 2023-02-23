@@ -1,10 +1,9 @@
 import { Card } from "./Card";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useMobile } from "@/hooks/useMobile";
 
 export function Carousel() {
-    const [isMobile, setIsMobile] = useState(false)
 
     const scrollLeft = () => {
         document.getElementById("content").scrollLeft -= 400;
@@ -13,38 +12,43 @@ export function Carousel() {
         document.getElementById("content").scrollLeft += 400;
     }
 
-    useEffect(() => {
-        setInterval(() => {
+    function handleAutoScroll() {
+        const currentDevice = localStorage.getItem('device')
+        console.log(currentDevice)
 
-            if (!isMobile) {
-                document.getElementById("content").scrollLeft += 220;
-                console.log(document.getElementById("content").scrollLeft)
-                
-                if (document.getElementById("content").scrollLeft > 1200) {
-                    document.getElementById("content").scrollLeft = 0
-                    return
-                }
+        if (currentDevice == 'mobile') {
+            console.log('mobile')
+            document.getElementById("content").scrollLeft += 180;
+
+            if (document.getElementById("content").scrollLeft >= 2000) {
+                document.getElementById("content").scrollLeft = 0
 
                 return
             }
 
-            document.getElementById("content").scrollLeft += 400;
-            console.log(document.getElementById("content").scrollLeft)
-            if (document.getElementById("content").scrollLeft > 2000) {
-                document.getElementById("content").scrollLeft = 0
-            }
+            return
+        }
 
-        }, 4000)
-    }, [])
+        document.getElementById("content").scrollLeft += 180;
+
+        if (document.getElementById("content").scrollLeft >= 1900) {
+            document.getElementById("content").scrollLeft = 0
+
+            return
+        }
+
+        return
+    }
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
             // eslint-disable-next-line react-hooks/rules-of-hooks
             var { device } = useMobile()
-            setIsMobile(device)
+            localStorage.setItem('device', device ? 'mobile' : 'web')
         }
-    }, [isMobile])
 
+        setInterval(handleAutoScroll, 4000)
+    }, [])
 
     return (
         <div className="relative mt-8">
@@ -69,7 +73,7 @@ export function Carousel() {
                 </div>
 
                 <div>
-                    <Card image='paciente-1-lateral.jpeg' />
+                    <Card image='paciente-1-costas.jpeg' />
                 </div>
 
                 <div>
@@ -97,6 +101,14 @@ export function Carousel() {
                 </div>
 
                 <div>
+                    <Card image='paciente-1-costas.jpeg' />
+                </div>
+
+                <div>
+                    <Card image='paciente-2-frente.png' />
+                </div>
+
+                <div>
                     <Card image='paciente-1-lateral.jpeg' />
                 </div>
 
@@ -105,7 +117,15 @@ export function Carousel() {
                 </div>
 
                 <div>
+                    <Card image='paciente-6-frente.png' />
+                </div>
+
+                <div>
                     <Card image='paciente-3-direita.png' />
+                </div>
+
+                <div>
+                    <Card image='paciente-6-lateral.png' />
                 </div>
             </div>
         </div>
