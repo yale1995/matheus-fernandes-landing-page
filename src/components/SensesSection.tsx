@@ -9,7 +9,7 @@ export function SensesSection() {
             </h1>
             <div className='max-w-7xl w-full mt-10 mx-auto mobile:max-w-xs mobile:mt-4'>
                 <p className="text-xl max-w-5xl mx-auto text-white text-center mb-8 mobile:text-sm mobile:text-left">
-                    Pode acreditar, eu já estive dos dois lados e sei o quanto é ruim quando nós não nos colocarmos como prioridade em nossas vidas.
+                    Pode acreditar, eu já estive dos dois lados e sei o quanto é ruim quando nós não nos colocamos como prioridade em nossas vidas.
                     <span className="text-highlight block mt-4">Deixa eu te contar como eu me sentia antes de começar a cuidar da minha alimentação e buscar evoluir o meu físico:</span>
                 </p>
                 <CardContainer />

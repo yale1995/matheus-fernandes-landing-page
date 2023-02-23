@@ -21,7 +21,7 @@ export function SectionTwo() {
                         Você até vai bem nas primeiras semanas, e depois começa a se desviar, se distanciando cada vez mais do seu objetivo.
                     </p>
                     <p className='text-white text-md mt-4 mobile:text-xs'>
-                        Para que você alcance um resultado de verdade, é preciso que tenha um <span className='text-primary'>DIRECIONAMENTO</span> e <span className='text-primary'>ACOMPANHAMENTO</span> adequado, aliado ao suporte que você precisa.
+                        Para que você alcance um resultado de verdade, é preciso que tenha um <span className='text-primary'>DIRECIONAMENTO</span> e <span className='text-primary'>ACOMPANHAMENTO</span> adequado, aliado à um suporte eficiente.
                     </p>
                     <CallToAction />
                 </div>

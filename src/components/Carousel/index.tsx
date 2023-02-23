@@ -1,8 +1,10 @@
 import { Card } from "./Card";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useMobile } from "@/hooks/useMobile";
 
 export function Carousel() {
+    const [isMobile, setIsMobile] = useState(false)
 
     const scrollLeft = () => {
         document.getElementById("content").scrollLeft -= 400;
@@ -13,13 +15,35 @@ export function Carousel() {
 
     useEffect(() => {
         setInterval(() => {
+
+            if (!isMobile) {
+                document.getElementById("content").scrollLeft += 220;
+                console.log(document.getElementById("content").scrollLeft)
+                
+                if (document.getElementById("content").scrollLeft > 1200) {
+                    document.getElementById("content").scrollLeft = 0
+                    return
+                }
+
+                return
+            }
+
             document.getElementById("content").scrollLeft += 400;
-            if (document.getElementById("content").scrollLeft > 800) {
+            console.log(document.getElementById("content").scrollLeft)
+            if (document.getElementById("content").scrollLeft > 2000) {
                 document.getElementById("content").scrollLeft = 0
             }
 
-        }, 2000)
+        }, 4000)
     }, [])
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            // eslint-disable-next-line react-hooks/rules-of-hooks
+            var { device } = useMobile()
+            setIsMobile(device)
+        }
+    }, [isMobile])
 
 
     return (
@@ -39,9 +63,6 @@ export function Carousel() {
                 className="relative w-[950px] mobile:w-full mx-auto carousel p-4 flex items-center justify-center
                 overflow-x-auto scroll-smooth scrollbar-hide">
 
-                <div>
-                    <Card image='paciente-3-direita.png' />
-                </div>
 
                 <div>
                     <Card image='paciente-1-lateral.jpeg' />
@@ -77,6 +98,14 @@ export function Carousel() {
 
                 <div>
                     <Card image='paciente-1-lateral.jpeg' />
+                </div>
+
+                <div>
+                    <Card image='paciente-5.png' />
+                </div>
+
+                <div>
+                    <Card image='paciente-3-direita.png' />
                 </div>
             </div>
         </div>
