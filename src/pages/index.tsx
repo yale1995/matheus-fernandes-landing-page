@@ -9,6 +9,7 @@ import { useMobile} from '@/hooks/useMobile'
 import { useEffect, useState } from 'react'
 
 import Head from 'next/head'
+import { PatientReviewsSection } from '@/components/PatientReviewsSection'
 
 
 
@@ -40,6 +41,7 @@ export default function Home() {
       <SensesSection />
       {!isMobile && <MFConsultingSection />}
       <AttentionSection/>
+      <PatientReviewsSection/>
     </>
   )
 }
