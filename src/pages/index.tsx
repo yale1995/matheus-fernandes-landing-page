@@ -27,11 +27,6 @@ export default function Home() {
     <>
       <Head>
         <title>Matheus Fernandes Nutri</title>
-        <meta
-          name="description"
-          content="Meu objetivo é fazer com que todos os meus pacientes alcancem um nível de físico e saúde que sempre sonharam."
-        />
-        <meta name="title" content="Matheus Fernandes Nutricionista" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/marca-dagua-mf.png" />
       </Head>

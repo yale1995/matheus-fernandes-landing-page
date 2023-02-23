@@ -14,8 +14,12 @@ export function Carousel() {
     useEffect(() => {
         setInterval(() => {
             document.getElementById("content").scrollLeft += 400;
-        }, 10000)
-    })
+            if (document.getElementById("content").scrollLeft > 800) {
+                document.getElementById("content").scrollLeft = 0
+            }
+
+        }, 2000)
+    }, [])
 
 
     return (
@@ -34,41 +38,45 @@ export function Carousel() {
                 id="content"
                 className="relative w-[950px] mobile:w-full mx-auto carousel p-4 flex items-center justify-center
                 overflow-x-auto scroll-smooth scrollbar-hide">
+
                 <div>
-                    <Card />
+                    <Card image='paciente-3-direita.png' />
                 </div>
+
                 <div>
-                    <Card />
+                    <Card image='paciente-1-lateral.jpeg' />
                 </div>
+
                 <div>
-                    <Card />
+                    <Card image='paciente-1-lateral.jpeg' />
                 </div>
+
                 <div>
-                    <Card />
+                    <Card image='paciente-2-frente.png' />
                 </div>
+
                 <div>
-                    <Card />
+                    <Card image='paciente-3-frente.png' />
                 </div>
+
                 <div>
-                    <Card />
+                    <Card image='paciente-1-costas.jpeg' />
                 </div>
+
                 <div>
-                    <Card />
+                    <Card image='paciente-3-esquerda.png' />
                 </div>
+
                 <div>
-                    <Card />
+                    <Card image='paciente-5.png' />
                 </div>
+
                 <div>
-                    <Card />
+                    <Card image='paciente-3-direita.png' />
                 </div>
+
                 <div>
-                    <Card />
-                </div>
-                <div>
-                    <Card />
-                </div>
-                <div>
-                    <Card />
+                    <Card image='paciente-1-lateral.jpeg' />
                 </div>
             </div>
         </div>
