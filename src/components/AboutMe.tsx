@@ -4,15 +4,15 @@ import MFNutri from '../../public/who.png'
 export function AboutMe() {
     return (
         <section className="bg-primary mobile:pt-4">
-            <div className='max-w-7xl w-full flex items-center justify-between mx-auto mobile:max-w-xs mobile:flex-col-reverse' >
-                <div className='w-[700px] mobile:w-96'>
+            <div className='max-w-7xl w-full flex items-center justify-between mx-auto mobile:max-w-[350px] mobile:flex-col-reverse' >
+                <div className='w-[700px] -mt-32 mobile:w-96 mobile:-mt-8'>
                     <Image
                         src={MFNutri}
                         alt='Nutricionista Matheus Fernandes cruzando os braços'
                     />
                 </div>
 
-                <div className='max-w-xl w-full'>
+                <div className='max-w-xl w-full pb-4'>
                     <h1 className='text-gray-200 text-heading font-bold mobile:text-heading-2'>
                         Quem é
                         <span className='text-gray-900 block'> Matheus Fernandes?</span>

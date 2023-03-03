@@ -13,9 +13,6 @@ import { useEffect, useState } from 'react'
 
 import Head from 'next/head'
 
-
-
-
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false)
 
@@ -34,11 +31,11 @@ export default function Home() {
         <link rel="icon" href="/marca-dagua-mf.png" />
       </Head>
       <HeroSection />
-      <SectionTwo />
+      <AttentionSection/>
       <MetodologySection />
       <SensesSection />
+      <SectionTwo />
       {!isMobile && <MFConsultingSection />}
-      <AttentionSection/>
       <PatientReviewsSection/>
       <AboutMe/>
       <Footer isMobile={isMobile}/>

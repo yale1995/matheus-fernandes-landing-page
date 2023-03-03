@@ -6,8 +6,8 @@ import WomanImage from '../../public/starting-diet-image.png'
 
 export function SectionTwo() {
     return (
-        <section className='py-16 mobile:py-4 border-b-2 border-gray-900'>
-            <div className="max-w-7xl mx-auto flex items-center justify-between mobile:max-w-xs mobile:flex-col">
+        <section className='py-32 mobile:py-4'>
+            <div className="max-w-7xl mx-auto flex items-center justify-between mobile:max-w-[350px] mobile:flex-col">
                 <div className='max-w-xl w-full'>
                     <h1
                         className='text-white text-heading-2 font-bold mobile:text-xl'>

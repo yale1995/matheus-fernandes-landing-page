@@ -5,11 +5,11 @@ import MosaicoImage from '../../public/mosaico.png'
 export function MFConsultingSection() {
     return (
         <section className="relative">
-            <h1 className="text-highlight font-bold text-heading-2 absolute  inset-x-0  inset-y-4 text-center z-10">
-                CONSULTORIA MATHEUS FERNANDES
+            <h1 className="text-highlight font-bold text-[32px] absolute inset-x-0 inset-y-8 text-center z-10">
+                Consultoria Online MF Nutrição Esportiva
             </h1>
             <div className="absolute font-bold z-10 text-white inset-x-0 inset-y-0 items-center justify-center flex gap-16">
-                <div className="">
+                <div>
                     <h3 className="text-[130px]">+500</h3>
                     <span className="block text-right">PACIENTES</span>
                 </div>
@@ -21,7 +21,7 @@ export function MFConsultingSection() {
             <div>
                 <Image
                     src={MosaicoImage} alt='Moisaco com fotos de pacientes de Matheus Fernandes Nutricionista'
-                    className='w-full h-full object-cover opacity-30'
+                    className='w-full h-full object-cover opacity-10'
                     priority />
             </div>
         </section>

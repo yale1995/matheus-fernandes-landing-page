@@ -2,11 +2,11 @@ import { MethodologyCardContainer } from "./MethodologyCardContainer";
 
 export function MetodologySection() {
     return (
-        <section className="py-16 mobile:py-4 bg-gradient-to-b from-background to-background-2">
-            <h1 className="text-white text-center text-heading-2 font-bold max-w-2xl mx-auto mobile:text-xl mobile:max-w-xs mobile:text-left">
+        <section className="py-16 mobile:py-4 mobile:pb-8 bg-background">
+            <h1 className="text-white text-center text-heading-2 font-bold max-w-2xl mx-auto mobile:text-xl mobile:max-w-[350px] mobile:text-left">
                 Conheça a Metodologia que já fez centenas de pessoas alcançarem o físico dos sonhos
             </h1>
-            <div className='max-w-7xl w-full mt-10 mx-auto mobile:max-w-xs mobile:mt-4'>
+            <div className='max-w-7xl w-full mt-10 mx-auto mobile:max-w-[350px] mobile:mt-4'>
                 <p className="text-xl max-w-5xl mx-auto text-white text-center mb-8 mobile:text-sm mobile:text-left mobile:mb-4">
                     A CMF é baseada em 3 pilares importantíssimos para quem busca a evolução do físico:
                     <span className="text-primary"> Alimentação, Motivação e Aderência.</span>

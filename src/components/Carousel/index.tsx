@@ -52,8 +52,8 @@ export function Carousel() {
 
     return (
         <div className="relative mt-8">
-            <div className="h-full w-36 bg-gradient-to-r from-background-2 to-transparent z-10 absolute left-36 mobile:hidden" />
-            <div className="h-full w-36 bg-gradient-to-r from-transparent to-background-2 z-10 absolute right-36 mobile:hidden" />
+            <div className="h-full w-36 bg-gradient-to-r from-background to-transparent z-10 absolute left-36 mobile:hidden" />
+            <div className="h-full w-36 bg-gradient-to-r from-transparent to-background z-10 absolute right-36 mobile:hidden" />
             <div className="absolute right-0 -top-8 ">
                 <button onClick={scrollLeft} className="p-2 m-2 rounded-full bg-white">
                     <FiChevronLeft />

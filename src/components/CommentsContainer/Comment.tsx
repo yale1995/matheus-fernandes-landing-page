@@ -1,6 +1,6 @@
 import Image from "next/image"
-import ClaraImage from '../../../public/clara.jpg'
-import BrendaImage from '../../../public/brenda.jpg'
+import ClaraImage from '../../../public/clara.jpeg'
+import BrendaImage from '../../../public/brenda.jpeg'
 
 export function Comment({ content, author, image }) {
     return (
