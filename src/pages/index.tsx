@@ -7,6 +7,7 @@ import { AttentionSection } from '@/components/AttentionSection'
 import { PatientReviewsSection } from '@/components/PatientReviewsSection'
 import { AboutMe } from '@/components/AboutMe'
 import { Footer } from '@/components/Footer'
+import { GetStaticProps } from 'next'
 
 import { useMobile} from '@/hooks/useMobile'
 import { useEffect, useState } from 'react'
@@ -41,4 +42,10 @@ export default function Home() {
       <Footer isMobile={isMobile}/>
     </>
   )
+}
+
+export const getStaticProps:GetStaticProps = async (context) => {
+  return {
+    props: {}
+  }
 }
