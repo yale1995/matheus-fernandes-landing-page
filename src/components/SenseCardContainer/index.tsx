@@ -38,13 +38,13 @@ export function CardContainer() {
             <SenseCard
                 image={Working}
                 alternativeText='Pessoa fazendo anotações em caderno'
-                thumb='Baixa produtividade durante o dias'
+                thumb='Baixa produtividade durante o dia'
             />
 
             <SenseCard
                 image={Loser}
                 alternativeText='Palavra Loser que significa perdedor em inglês'
-                thumb='Me sentia inferir aos outros'
+                thumb='Me sentia inferior aos outros'
             />
 
         </div>
