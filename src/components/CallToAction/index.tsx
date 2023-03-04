@@ -2,6 +2,7 @@ export function CallToAction({ isCenter = false }) {
 
 
     function handleGoesToForm() {
+        window.fbq('track', 'Lead')
         window.open('https://form.respondi.app/acHAZJfR', "_blank");
     }
 
