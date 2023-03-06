@@ -8,6 +8,8 @@ export function AboutMe() {
                 <div className='w-[700px] -mt-32 mobile:w-96 mobile:-mt-8'>
                     <Image
                         src={MFNutri}
+                        width={700}
+                        height={700}
                         alt='Nutricionista Matheus Fernandes cruzando os braços'
                     />
                 </div>
