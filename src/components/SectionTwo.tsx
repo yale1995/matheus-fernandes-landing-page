@@ -26,7 +26,7 @@ export function SectionTwo() {
                     <CallToAction />
                 </div>
                 <div className='w-[500px] mobile:w-[250px] mobile:mt-4'>
-                    <Image src={WomanImage} alt='Mulher insatisfeita com seu corpo' />
+                    <Image src={WomanImage} width={500} height={500} alt='Mulher insatisfeita com seu corpo' />
                 </div>
             </div>
         </section>
