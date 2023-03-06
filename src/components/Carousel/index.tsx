@@ -14,12 +14,11 @@ export function Carousel() {
 
     function handleAutoScroll() {
         const currentDevice = localStorage.getItem('device')
-        console.log(currentDevice)
 
         if (currentDevice == 'mobile') {
             document.getElementById("content").scrollLeft += 180;
 
-            if (document.getElementById("content").scrollLeft >= 2000) {
+            if (document.getElementById("content").scrollLeft >= 2300) {
                 document.getElementById("content").scrollLeft = 0
 
                 return
@@ -30,7 +29,7 @@ export function Carousel() {
 
         document.getElementById("content").scrollLeft += 180;
 
-        if (document.getElementById("content").scrollLeft >= 1900) {
+        if (document.getElementById("content").scrollLeft >= 2100) {
             document.getElementById("content").scrollLeft = 0
 
             return
@@ -113,6 +112,14 @@ export function Carousel() {
 
                 <div>
                     <Card image='paciente-5.png' />
+                </div>
+
+                <div>
+                    <Card image='paciente-7-frente.png' />
+                </div>
+
+                <div>
+                    <Card image='paciente-7-lateral.png' />
                 </div>
 
                 <div>
