@@ -17,7 +17,6 @@ export function Carousel() {
         console.log(currentDevice)
 
         if (currentDevice == 'mobile') {
-            console.log('mobile')
             document.getElementById("content").scrollLeft += 180;
 
             if (document.getElementById("content").scrollLeft >= 2000) {
