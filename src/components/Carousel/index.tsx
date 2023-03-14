@@ -67,71 +67,71 @@ export function Carousel() {
 
 
                 <div>
-                    <Card image='paciente-1-lateral.jpeg' />
+                    <Card image='/paciente-1-lateral.jpeg' />
                 </div>
 
                 <div>
-                    <Card image='paciente-1-costas.jpeg' />
+                    <Card image='/paciente-1-costas.jpeg' />
                 </div>
 
                 <div>
-                    <Card image='paciente-2-frente.png' />
+                    <Card image='/paciente-2-frente.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-3-frente.png' />
+                    <Card image='/paciente-3-frente.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-1-costas.jpeg' />
+                    <Card image='/paciente-1-costas.jpeg' />
                 </div>
 
                 <div>
-                    <Card image='paciente-3-esquerda.png' />
+                    <Card image='/paciente-3-esquerda.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-5.png' />
+                    <Card image='/paciente-5.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-3-direita.png' />
+                    <Card image='/paciente-3-direita.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-1-costas.jpeg' />
+                    <Card image='/paciente-1-costas.jpeg' />
                 </div>
 
                 <div>
-                    <Card image='paciente-2-frente.png' />
+                    <Card image='/paciente-2-frente.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-1-lateral.jpeg' />
+                    <Card image='/paciente-1-lateral.jpeg' />
                 </div>
 
                 <div>
-                    <Card image='paciente-5.png' />
+                    <Card image='/paciente-5.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-7-frente.png' />
+                    <Card image='/paciente-7-frente.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-7-lateral.png' />
+                    <Card image='/paciente-7-lateral.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-6-frente.png' />
+                    <Card image='/paciente-6-frente.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-3-direita.png' />
+                    <Card image='/paciente-3-direita.png' />
                 </div>
 
                 <div>
-                    <Card image='paciente-6-lateral.png' />
+                    <Card image='/paciente-6-lateral.png' />
                 </div>
             </div>
         </div>
