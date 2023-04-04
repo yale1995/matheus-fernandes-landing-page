@@ -26,14 +26,14 @@ export default function Document() {
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '928389575005890');
+              fbq('init', '1319380381951868');
               fbq('track', 'PageView');
             `,
             }}
           />
           <noscript
             dangerouslySetInnerHTML={{
-              __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=928389575005890&ev=PageView&noscript=1" />`,
+              __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1319380381951868&ev=PageView&noscript=1" />`,
             }}
           />
 
